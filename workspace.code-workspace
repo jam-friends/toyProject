@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "styles"
+    },
+    {
+      "path": "package/study_searcher"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "../../.yarn/sdks/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true
+  }
+}

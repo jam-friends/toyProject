@@ -1,0 +1,21 @@
+{
+  "name": "toyProject",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "package/*"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint ./package --ext .ts,.tsx,.js,.jsx --cache",
+    "project-a": "yarn workspace project-a",
+    "project-b": "yarn workspace project-b",
+    "test:all": "yarn workspaces foreach --parallel run test"
+  },
+  "packageManager": "yarn@3.4.1",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  }
+}
