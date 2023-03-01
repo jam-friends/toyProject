@@ -1,5 +1,18 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["src/styles/*"]
+      // "@pages/*": ["../common/src/pages/*"],
+      // "@components/*": ["../common/src/components/*"],
+      // "@hooks/*": ["../common/src/hooks/*"],
+      // "@constants/*": ["../common/src/constants/*"],
+      // "@public/*": ["../common/public/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsxImportSource": "@emotion/react"
+  },
+  "include": ["svg.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
